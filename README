@@ -6,6 +6,8 @@ Use GMail SMTP server to send emails in Rails ActionMailer
 Example
 =======
 
+Place code snippet in config/environment.rb
+
 ActionMailer::Base.server_settings = {
   :address => "smtp.gmail.com",
   :port => 587,

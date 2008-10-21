@@ -13,7 +13,7 @@ ActionMailer::Base.smtp_settings = {
   :port => 587,
   :domain => "mycompany.com",
   :authentication => :plain,
-  :user_name => "username",
+  :user_name => "username@mycompany.com",
   :password => "password"
 }
 

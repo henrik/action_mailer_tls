@@ -8,7 +8,7 @@ Example
 
 Place code snippet in config/environment.rb
 
-ActionMailer::Base.server_settings = {
+ActionMailer::Base.smtp_settings = {
   :address => "smtp.gmail.com",
   :port => 587,
   :domain => "mycompany.com",

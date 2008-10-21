@@ -17,7 +17,7 @@ Put this in config/initializers/mail.rb:
       :password => "password"
     }
 
-Or better yet, keep your password outside of version control in a configuration YAML file (http://railscasts.com/episodes/85-yaml-configuration-file) like
+Better yet, keep your password outside of version control in a configuration YAML file (http://railscasts.com/episodes/85-yaml-configuration-file) like
 
     development:
       smtp_settings:
@@ -29,6 +29,8 @@ Or better yet, keep your password outside of version control in a configuration 
 and just do
 
     ActionMailer::Base.smtp_settings = APP_CONFIG['smtp_settings'].symbolize_keys
+    
+or make a config/mailer.yml as described in http://www.danielfischer.com/2008/01/09/how-to-use-gmail-as-your-mail-server-for-rails/.
 
 Copyright (c) 2008 Eladio Caritos, released under the MIT license.
 Modifications by Henrik Nyh <http://henrik.nyh.se>.
